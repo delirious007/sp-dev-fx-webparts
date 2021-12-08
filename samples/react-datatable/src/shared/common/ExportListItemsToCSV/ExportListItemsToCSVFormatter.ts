@@ -7,7 +7,7 @@ export function csvCellFormatter(value: any, type: string) {
       value = value.props.children;
       break;
     case 'SP.FieldUser':
-      value = value.props.displayName;
+      value = value.props ? value.props.displayName : "";
       break;
     default:
       break;
